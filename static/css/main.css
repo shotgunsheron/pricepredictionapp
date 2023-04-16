@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --theme-1: #32292f;
+    --theme-2: #34343d;
+    --theme-3: #6e7dab;
+    --theme-4: #5762d5;
+    --theme-5: #d1e3dd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--theme-2);
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+nav.header{
+    margin: 0;
+    background: var(--theme-2);
+    color: var(--theme-5);
+    position: sticky;
+    top: 0;
+}
+
+nav.header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+nav.header ul > li{
+    padding: 1rem 2rem 1rem;
+}
+
+nav.header ul > li > a{
+    text-decoration: none;
+    color: var(--theme-5);
+}
+
+nav.header ul > li:hover{
+    background: var(--theme-3);
+}
+
+
+section.home{
+    background-repeat: none;
+    background-size: cover;
+    background-image: url(https://rare-gallery.com/uploads/posts/374790-4k-wallpaper.jpg);
+    width: calc(100vw - 1.1rem);
+    height: 100vh;
+    /* color: var(--theme-5); */
+}
+
+#home{
+    text-align: center;
+}
+section.demo{
+    overflow-x: hidden;
+    width: calc(100vw - 2rem);
+    height: 100vh;
+}
+
+#demo{
+	text-align: center;
+	font-size: 150%
+}
+.center-parent{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    
+    position: relative;
+    /* top: 700px; */
+    /* left: 850px; */
+}
+
+#next{
+    position: relative;
+    /* position: fixed; */
+    top: 60%;
+    left: 8%;
+    transform: translate(-50%, -60%);
+}
+
+form{
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+}
+
+#next{
+    font-size: 3rem;
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 0px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+    overflow:hidden;
+    border-radius: 0.25em;
+}
+
+button a{
+    text-decoration: none;
+    position: relative;
+    padding: 10px 70px;
+    transition: color 0.5s ease-out;
+    color: #3498db;
+    z-index: 50;
+}
+
+button a:hover{
+    transition: color 0.5s ease-out;
+    color: #fff;
+}
+
+#next::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    transition: 0.5s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    z-index: 0;
+}
+
+#next:hover::before{
+    height: 180%
+}
+
+
+    /* 
+    border: var(--theme-4) 0.125em solid;
+    padding: .125em 1.125em;
+    border-radius: 0.25em;
+    
+    box-shadow: 0 0 0.75em var(--theme-1);
+    background: var(--theme-5) */
+
+/* causes some huge problems not sure why ok np but do you see the button*/
+/* yeah it's...interstingalr Can you send a screenshot cause I'm working blind*/
+/* button::before {
+    content: "";
+    position: absolute;
+    background: var(--theme-5);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35); filter: blur(2em)
+} */
+
+/* do you still want this ^ alr Keep it for now but i'll most likely delete it.*/
+
+section.demo{
+    margin: 0.5rem;
+    color: var(--theme-5);
+    /* overflow-x: hidden; */
+}

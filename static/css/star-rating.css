@@ -1,0 +1,18 @@
+/* just to keep the star widget's css out of the main stuff to avoid confusion */
+
+.star-rating{
+    display: inline-flex;
+}
+
+.star::after{
+    font-size: 1.5rem;
+    content: '★';
+}
+
+.star{
+    color: black;
+}
+
+.star:hover{
+    color: yellow;
+}
