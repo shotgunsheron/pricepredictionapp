@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/main.css')  }}">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/star-rating.css')  }}">
+    <script src="{{  url_for('static',filename='js/script.js')  }}" defer></script>
+    <title>Price Prediction App</title>
+</head>
+
+<body>
+    <nav class="header">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#demo">Demo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="home" id="home">
+            <br>        
+            <h1 style="margin-left: 1rem; margin-top: 0; font-size: 3rem;">
+                Price Prediction App
+            </h1>
+            <h2 style="margin-left: 1rem;">
+                By: Harinarayan AsooriSriram, Michael Grimalovsky, Aaditya Mittal, Srijith Chinthalapudi
+            </h2>
+            <br>
+
+            <!-- <div class="center-parent"> -->
+                <button id="next"><a href='#demo'>Try it out</a></button>
+            <!-- </div> -->
+
+
+        </section>
+
+        <section class="demo" id="demo">
+            <form>
+
+                <label for="product_category">Tell Us About Your Product: </label>
+                <br>
+                <br>
+                <!-- <input type="text" id="product_category" name="category"> -->
+                <textarea name="category" id="product_category" cols="30" rows="3" placeholder="Type in here..."></textarea>
+
+                <br>
+                <br>
+								<br>
+								<br>
+                <label for="manufacturing_cost">Product Manufacturing Cost in USD: </label>
+                <input type="number" id="manufacturing_cost" name="mPrice" step="0.01">
+
+                <br>
+                <br>
+								<br>
+								<br>
+								<label for="manufactured_count"># of Goods Produced: 
+								
+								<input type="number" id="manufactured_count" name="mCount" step="0.01">
+
+								<br>
+                <br>
+								<br>
+								<br>
+									
+								<label for="min_order_quant">Minimum Order Quantity: 
+								
+								<input type="number" id="min_order_quant" name="ordCount" step="0.01">
+
+								<br>
+                <br>
+								<br>
+								<br>
+									
+								<label for="free_shipping">Free Shipping?  Yes:
+									
+								<input type="radio" id="yes" name="fShipping" step="0.01">
+
+								<label for="free_shipping">No:
+									
+								<input type="radio" id="no" name="fShipping" step="0.01">
+								
+                <br>
+                <br>
+								<br>
+								<br>
+									
+                <label for="product_rating">Product rating: </label>
+                
+                <div class="star-rating">
+                    <div class="star" data-value="1"></div>
+                    <div class="star" data-value="2"></div>
+                    <div class="star" data-value="3"></div>
+                    <div class="star" data-value="4"></div>
+                    <div class="star" data-value="5"></div>
+                </div>
+                <input type="hidden" id="product_rating" name="rating" value="0">
+
+                <br>
+                <br>
+								<br>
+                <button class="submit">Submit</button>
+            </form>
+
+
+            <p style="display: none;" class="finalOutput"></p>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
+
+<!--The following is just code for a sample home page
+<button onclick="location.href='page2.html'">Try it out</button> -->
